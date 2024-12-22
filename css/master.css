@@ -1,0 +1,123 @@
+/* Start Global Rules */
+* {
+    --webkit-box-sizing: border-box;
+    --moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+}
+ul {
+    list-style: none;
+}
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+@media (max-width: 767px) {
+    .container {width: 100%;}
+}
+@media (min-width: 768px) {
+    .container {width: 750px;}
+}
+@media (min-width: 992px) {
+    .container {width: 970;}
+}
+@media (min-width: 1200px) {
+    .container {width: 1170px;}
+}
+:root {
+    --color1: #a2a2a2;
+    --color2: #19c8fe;
+    --color3: #1f2021;
+    --color4: #0f748fcc;
+    --color5: #777777;
+    --white: #FFFFFF;
+    --text-colo: #1f2021;
+    --trans: 0.3s;
+    --radius1: 10px;
+    --section-padding: 100px;
+}
+
+/* End Global Rules */
+/*    Start Section Heading    */
+.section-heading {
+    text-align: center;
+    padding-bottom: 80px;
+}
+.section-heading > h1 {
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color3, #222);
+    width: max-content;
+    margin: auto;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.section-heading > h1::before {
+    content: '';
+    position: absolute;
+    padding: 9px;
+    border-radius: 50%;
+    background-color: var(--white, #fff);
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 2;
+    border: 2px solid var(--color3, #222);
+
+}
+.section-heading > h1::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background-color: var(--color3, #222);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section-heading > p {
+    width: 500px;
+    max-width: 100%;
+    line-height: 2;
+    color: var(--color5, #777);
+    font-size: 13px;
+    margin: auto;
+}
+/*    End   Section Heading    */
+/*    Start Section Heading one [1]    */
+.section-heading-1 {
+    text-align: center;
+    padding-bottom: 80px;
+}
+.section-heading-1 > h1 {
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color3, #222);
+    width: max-content;
+    margin: auto;
+    margin-bottom: 20px;
+    position: relative;
+}
+.section-heading-1 > p {
+    width: 500px;
+    max-width: 100%;
+    line-height: 2;
+    color: var(--color5, #777);
+    font-size: 13px;
+    margin: auto;
+}
+/*    End   Section Heading one [1]    */
+/* hello */
